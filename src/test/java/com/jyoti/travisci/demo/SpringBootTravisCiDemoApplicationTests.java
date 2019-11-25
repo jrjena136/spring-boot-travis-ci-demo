@@ -1,5 +1,6 @@
 package com.jyoti.travisci.demo;
 
+import com.jyoti.travisci.demo.controller.DemoController;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@WebMvcTest(SpringBootTravisCiDemoApplication.class)
+@WebMvcTest(DemoController.class)
 @RunWith(SpringRunner.class)
 class SpringBootTravisCiDemoApplicationTests {
     @Autowired
